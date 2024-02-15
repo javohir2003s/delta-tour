@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block css %}
+  
+{% endblock css %}
+
+{% block body %}
+  
+
+         <main id="content" class="site-main">
+            <section class="contact-inner-page">
+               <!-- ***Inner Banner html start form here*** -->
+               <div class="inner-banner-wrap">
+                  <div class="inner-baner-container" style="background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/170814175458-china-beautiful-places-wuyuan-flickr-carlos-adampol-galindo.jpg?q=w_1600,h_900,x_0,y_0,c_fill/h_618);">
+                     <div class="container">
+                        <div class="inner-banner-content">
+                           <h1 class="page-title">{% trans "Contact US" %}</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ***Inner Banner html end here*** -->
+               <!-- ***contact section html start form here*** -->
+               <div class="inner-contact-wrap">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="section-heading">
+                              <h5 class="sub-title">{% trans "GET IN TOUCH" %}</h5>
+                              <h2 class="section-title">{% trans "REACH & CONTACT US!" %}</h2>
+                              <p>{% trans "we can help you by contacting us" %}</p>
+                              <div class="social-icon">
+                                 <ul>
+                                    <li>
+                                       <a href=" https://www.instagram.com/deltatoursam/" target="_blank">
+                                          <i class="fab fa-instagram" aria-hidden="true"></i>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="https://t.me/deltatour_sam" target="_blank">
+                                          <i class="fab fa-telegram" aria-hidden="true"></i>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.facebook.com/profile.php?id=100088593559120&mibextid=LQQJ4d" target="_blank">
+                                          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="contact-map">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d960.0737698907518!2d66.96914743544299!3d39.6694266285404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1708011756284!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="contact-from-wrap primary-bg">
+                              <form method="post" class="contact-from">
+                                {% csrf_token %}
+                                    <p>
+                                        <label>{% trans "First Name" %}..</label>
+                                        <input type="text" name="first_name" placeholder="Your Name*" required>
+                                    </p>
+                                    <p>
+                                        <label>{% trans "Phone" %}</label>
+                                        <input type="text" name="phone_number" placeholder="Your Phone*" required>
+                                    </p>
+                                    <p>
+                                        <label>{% trans "Comments / Questions" %}</label>
+                                        <textarea rows="8" name="comment" placeholder="Your Message*" required></textarea>
+                                    </p>
+                                 <p>
+                                    <input type="submit" name="submit" value="SUBMIT MESSAGE">
+                                 </p>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ***contact section html start form here*** -->
+               <!-- ***iconbox section html start form here*** -->
+               <div class="contact-details-section bg-light-grey">
+                  <div class="container">
+                     <div class="row align-items-center">
+                        <div class="col-lg-4">
+                           <div class="icon-box border-icon-box">
+                              <div class="box-icon">
+                                 <i aria-hidden="true" class="fas fa-envelope-open-text"></i>
+                              </div>
+                              <div class="icon-box-content">
+                                 <h4>{% trans "EMAIL ADDRESS" %}</h4>
+                                 <ul>
+                                    <li>
+                                       <a href="mailto:alisheyx361@gmail.com">alisheyx361@gmail.com</a>
+                                    </li>
+                                    <li>
+                                       <a href="mailto:alisheyx361@gmail.com">alhppypro@gmail.com</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="icon-box border-icon-box">
+                              <div class="box-icon">
+                                 <i aria-hidden="true" class="fas fa-phone-alt"></i>
+                              </div>
+                              <div class="icon-box-content">
+                                 <h4>{% trans "PHONE NUMBER" %}</h4>
+                                 <ul>
+                                    <li>
+                                       <a href="tell:+998 95 500 00 03">+998 95 500 00 03</a>
+                                    </li>
+                                    <li>
+                                       <a href="tell:+998 97 394 00 02">+998 97 394 00 02</a>
+                                    </li>
+                                    <li>
+                                       <a href="tell:+998 97 924 76 00">+998 97 924 76 00</a>
+                                    </li>
+                            
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="icon-box border-icon-box">
+                              <div class="box-icon">
+                                 <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+                              </div>
+                              <div class="icon-box-content">
+                                 <h4>{% trans "ADDRESS LOCATION" %}</h4>
+                                 <ul>
+                                    <li>
+                                       Samarqand shahar
+                                    </li>
+                                    <li>
+                                       Gagarin 
+                                    </li>
+                                    <li>
+                                       57-uy
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ***iconbox section html end here*** -->
+            </section>
+         </main>
+{% endblock body %}
+
+{% block js %}
+  
+{% endblock js %}
